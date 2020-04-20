@@ -5,6 +5,8 @@
 [![License](https://img.shields.io/cocoapods/l/FloatyPanel.svg?style=flat)](https://cocoapods.org/pods/FloatyPanel)
 [![Platform](https://img.shields.io/cocoapods/p/FloatyPanel.svg?style=flat)](https://cocoapods.org/pods/FloatyPanel)
 
+Lightweight and easy to use floating panel.
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.

@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		07EE48616E009025946C214023FE4E06 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		2AB234C62F77AE516CA494F7E021BD2B /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D612B1D5F67BD21C49B5431FA894AD9 /* Extension.swift */; };
+		2AB234C62F77AE516CA494F7E021BD2B /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D612B1D5F67BD21C49B5431FA894AD9 /* UIView+Extension.swift */; };
 		46C4A267231B31B5BEB657A831E26ED9 /* Pods-FloatyPanel_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C63726E4B9E94FAD2E39B69DF74DB1EB /* Pods-FloatyPanel_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B29FE1089D00B0E2A409285A22731D51 /* FloatyPanel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7AD19834E1EA62FF8753DC07AF1B26AD /* FloatyPanel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C1713DEB719283792BC735456054DAB9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
@@ -34,7 +34,7 @@
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		372D113842A7F8726F3D2F26C9F10770 /* FloatyPanel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FloatyPanel.release.xcconfig; sourceTree = "<group>"; };
 		3D5FB28E910969DEB2A569A4ADC1D637 /* Pods-FloatyPanel_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FloatyPanel_Example-frameworks.sh"; sourceTree = "<group>"; };
-		3D612B1D5F67BD21C49B5431FA894AD9 /* Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extension.swift; path = FloatyPanel/Classes/Extension.swift; sourceTree = "<group>"; };
+		3D612B1D5F67BD21C49B5431FA894AD9 /* UIView+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Extension.swift"; path = "FloatyPanel/Classes/UIView+Extension.swift"; sourceTree = "<group>"; };
 		48CF466CD88865A3DC65E13BAF8E6ADA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		576C0CAD41B5C4F317A9D71DE036BA07 /* FloatyPanel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FloatyPanel.debug.xcconfig; sourceTree = "<group>"; };
 		65C9B6AF7E628956090E56556B3B06B1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
@@ -112,7 +112,7 @@
 		0AAFD3B198879CE2B2E183C74BC03F36 /* FloatyPanel */ = {
 			isa = PBXGroup;
 			children = (
-				3D612B1D5F67BD21C49B5431FA894AD9 /* Extension.swift */,
+				3D612B1D5F67BD21C49B5431FA894AD9 /* UIView+Extension.swift */,
 				DCE4EBC642FD2B31FEE4EB3DE9C29F4A /* FloatyPanelViewController.swift */,
 				4A58377FEB17CC4955AC8A00D740C44A /* Pod */,
 				D59419AF187D909E8FC7BB6E30221050 /* Support Files */,
@@ -290,7 +290,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2AB234C62F77AE516CA494F7E021BD2B /* Extension.swift in Sources */,
+				2AB234C62F77AE516CA494F7E021BD2B /* UIView+Extension.swift in Sources */,
 				E144D0E847B68E5A317F6DA54B79791C /* FloatyPanel-dummy.m in Sources */,
 				E95CAF126212393740D7BABA0E46F44B /* FloatyPanelViewController.swift in Sources */,
 			);

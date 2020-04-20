@@ -135,11 +135,7 @@ open class FloatyPanelViewController: UIViewController {
         view.addSubview(backgroundView)
         view.sendSubview(toBack: backgroundView)
         
-        backgroundView.translatesAutoresizingMaskIntoConstraints = false
-        backgroundView.topAnchor.constraint(equalTo: view.topAnchor, constant: 0).isActive = true
-        backgroundView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0).isActive = true
-        backgroundView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 0).isActive = true
-        backgroundView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 0).isActive = true
+        backgroundView.bindViewFrameToSuperviewBounds()
     }
     
     private func setupGrabberView() {
