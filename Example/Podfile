@@ -1,0 +1,6 @@
+use_frameworks!
+
+target 'FloatyPanel_Example' do
+  pod 'FloatyPanel', :path => '../'
+ 
+end

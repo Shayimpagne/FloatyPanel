@@ -1,0 +1,16 @@
+PODS:
+  - FloatyPanel (0.1.0)
+
+DEPENDENCIES:
+  - FloatyPanel (from `../`)
+
+EXTERNAL SOURCES:
+  FloatyPanel:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FloatyPanel: 6040d4ca8d6bc79e4f1e0fe951614ce856f1f2ec
+
+PODFILE CHECKSUM: dcee73e362f184170f6f4a72e9f2c0261a39e21f
+
+COCOAPODS: 1.9.1
