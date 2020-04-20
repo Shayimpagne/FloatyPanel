@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'FloatyPanel'
-  s.version          = '0.0.1'
+  s.version          = '0.0.2'
   s.summary          = 'A short description of FloatyPanel.'
 
 # This description is used to generate tags and improve search results.
@@ -25,7 +25,7 @@ TODO: Add long description of the pod here.
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Shayimpagne' => 'emchigg5@gmail.com' }
-  s.source           = { :git => 'https://github.com/Shayimpagne/FloatyPanel.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/Shayimpagne/FloatyPanel.git' }
 
   s.ios.deployment_target = '10.0'
 
