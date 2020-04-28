@@ -1,5 +1,5 @@
 PODS:
-  - FloatyPanel (0.1.0)
+  - FloatyPanel (0.0.2)
 
 DEPENDENCIES:
   - FloatyPanel (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  FloatyPanel: 6040d4ca8d6bc79e4f1e0fe951614ce856f1f2ec
+  FloatyPanel: ef64ccabeeeb8e98e4433db5f695acbea24f810b
 
 PODFILE CHECKSUM: dcee73e362f184170f6f4a72e9f2c0261a39e21f
 

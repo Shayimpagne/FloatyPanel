@@ -8,10 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
-		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		DC6626C23BBD4BECFC0CB938 /* Pods_FloatyPanel_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32BFC7B1FB9B7B88A4921079 /* Pods_FloatyPanel_Example.framework */; };
+		E93B31A62456F5DD00A43DEF /* CustomFloatyPanelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93B31A42456F5DD00A43DEF /* CustomFloatyPanelViewController.swift */; };
+		E93B31A72456F5DD00A43DEF /* CustomFloatyPanelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E93B31A52456F5DD00A43DEF /* CustomFloatyPanelViewController.xib */; };
+		E9CFDCE124588A1700D179D9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CFDCDF24588A1700D179D9 /* ViewController.swift */; };
+		E9CFDCE224588A1700D179D9 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9CFDCE024588A1700D179D9 /* ViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,11 +26,14 @@
 		607FACD01AFB9204008FA782 /* FloatyPanel_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FloatyPanel_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		81FB3999845166277FA23EBD /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		98BA7C9DBD08A4E57712256D /* Pods-FloatyPanel_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FloatyPanel_Tests.debug.xcconfig"; path = "Target Support Files/Pods-FloatyPanel_Tests/Pods-FloatyPanel_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		E93B31A42456F5DD00A43DEF /* CustomFloatyPanelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFloatyPanelViewController.swift; sourceTree = "<group>"; };
+		E93B31A52456F5DD00A43DEF /* CustomFloatyPanelViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomFloatyPanelViewController.xib; sourceTree = "<group>"; };
+		E9CFDCDF24588A1700D179D9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E9CFDCE024588A1700D179D9 /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 		EE81B4D08A554A0EBE5952F3 /* FloatyPanel.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = FloatyPanel.podspec; path = ../FloatyPanel.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		F7E27E34637F1B17CAEE4936 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -76,7 +82,10 @@
 			isa = PBXGroup;
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				E93B31A42456F5DD00A43DEF /* CustomFloatyPanelViewController.swift */,
+				E93B31A52456F5DD00A43DEF /* CustomFloatyPanelViewController.xib */,
+				E9CFDCDF24588A1700D179D9 /* ViewController.swift */,
+				E9CFDCE024588A1700D179D9 /* ViewController.xib */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
@@ -176,7 +185,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E93B31A72456F5DD00A43DEF /* CustomFloatyPanelViewController.xib in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
+				E9CFDCE224588A1700D179D9 /* ViewController.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -231,7 +242,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				E9CFDCE124588A1700D179D9 /* ViewController.swift in Sources */,
+				E93B31A62456F5DD00A43DEF /* CustomFloatyPanelViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

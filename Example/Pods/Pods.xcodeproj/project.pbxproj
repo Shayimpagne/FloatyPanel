@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		07EE48616E009025946C214023FE4E06 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		2AB234C62F77AE516CA494F7E021BD2B /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D612B1D5F67BD21C49B5431FA894AD9 /* UIView+Extension.swift */; };
 		46C4A267231B31B5BEB657A831E26ED9 /* Pods-FloatyPanel_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C63726E4B9E94FAD2E39B69DF74DB1EB /* Pods-FloatyPanel_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B29FE1089D00B0E2A409285A22731D51 /* FloatyPanel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7AD19834E1EA62FF8753DC07AF1B26AD /* FloatyPanel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		49C59190E36B795609321DE028E5420C /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEB014B8CC8F957AD041207FB7C98D8 /* UIView+Extension.swift */; };
+		AD44AFCC11E3B643D4B510C1031DAE98 /* FloatyPanel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 391A99D296852E7A3F1B8124D5984254 /* FloatyPanel-dummy.m */; };
+		B29FE1089D00B0E2A409285A22731D51 /* FloatyPanel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E703FC576EC9DF32EF136BD657694F60 /* FloatyPanel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C1713DEB719283792BC735456054DAB9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		CEBB60871C15E563D52BBAC63E4C164B /* FloatyPanelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90617CAF94FB9E69E5B06C2357B324E1 /* FloatyPanelViewController.swift */; };
 		E05E8A19E2BBD75E1906081302D29362 /* Pods-FloatyPanel_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F42E596244D5D4DC6AA05299E672B17E /* Pods-FloatyPanel_Example-dummy.m */; };
-		E144D0E847B68E5A317F6DA54B79791C /* FloatyPanel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BDF8599158E4B78D48B7DB97AB138BB5 /* FloatyPanel-dummy.m */; };
-		E95CAF126212393740D7BABA0E46F44B /* FloatyPanelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE4EBC642FD2B31FEE4EB3DE9C29F4A /* FloatyPanelViewController.swift */; };
+		E93B31AB2456F8CE00A43DEF /* RoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93B31AA2456F8CE00A43DEF /* RoundedView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,30 +29,31 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1887037F7AFDB4B9C645EFE139B4DE3B /* FloatyPanel.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = FloatyPanel.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		1E4F5F8B6447EFA0D09091D64231995C /* FloatyPanel-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FloatyPanel-Info.plist"; sourceTree = "<group>"; };
-		2BEB70980F6589FA92B9F2E29981DFAD /* FloatyPanel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FloatyPanel-prefix.pch"; sourceTree = "<group>"; };
+		0660955568F49720D7669C49B4B0FD3E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		189A74DA1D8BB8428C46D706359C8104 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		372D113842A7F8726F3D2F26C9F10770 /* FloatyPanel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FloatyPanel.release.xcconfig; sourceTree = "<group>"; };
+		32E74703942A7631802FEE01486D329E /* FloatyPanel.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = FloatyPanel.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		391A99D296852E7A3F1B8124D5984254 /* FloatyPanel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FloatyPanel-dummy.m"; sourceTree = "<group>"; };
 		3D5FB28E910969DEB2A569A4ADC1D637 /* Pods-FloatyPanel_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FloatyPanel_Example-frameworks.sh"; sourceTree = "<group>"; };
-		3D612B1D5F67BD21C49B5431FA894AD9 /* UIView+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Extension.swift"; path = "FloatyPanel/Classes/UIView+Extension.swift"; sourceTree = "<group>"; };
-		48CF466CD88865A3DC65E13BAF8E6ADA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		576C0CAD41B5C4F317A9D71DE036BA07 /* FloatyPanel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FloatyPanel.debug.xcconfig; sourceTree = "<group>"; };
-		65C9B6AF7E628956090E56556B3B06B1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		7AD19834E1EA62FF8753DC07AF1B26AD /* FloatyPanel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FloatyPanel-umbrella.h"; sourceTree = "<group>"; };
+		608C2E8DF04DC844B9F33F2663233A37 /* FloatyPanel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FloatyPanel-prefix.pch"; sourceTree = "<group>"; };
+		6186FA5BC27B244E3791109458AEC759 /* FloatyPanel-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FloatyPanel-Info.plist"; sourceTree = "<group>"; };
 		82B76892AB85BF7413BA91628B3F66F6 /* Pods-FloatyPanel_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FloatyPanel_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		90617CAF94FB9E69E5B06C2357B324E1 /* FloatyPanelViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FloatyPanelViewController.swift; path = FloatyPanel/Classes/FloatyPanelViewController.swift; sourceTree = "<group>"; };
 		95CEB423C351C1F2B40DDF07476DC7D2 /* Pods-FloatyPanel_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FloatyPanel_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		984832C07E47F8CDEA41FE1D96BCEA46 /* FloatyPanel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FloatyPanel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		99EC586C663279A893DCD0FFA59ACD0F /* FloatyPanel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FloatyPanel.release.xcconfig; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9DFE3BE2403088944BB3DF0CB9D4CBBE /* Pods-FloatyPanel_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FloatyPanel_Example.modulemap"; sourceTree = "<group>"; };
+		A64D73C2641C5EB25159D88492AB7170 /* FloatyPanel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FloatyPanel.modulemap; sourceTree = "<group>"; };
 		AF8BD0F67086F57B652408CAF2F29E73 /* Pods-FloatyPanel_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FloatyPanel_Example-Info.plist"; sourceTree = "<group>"; };
 		B0F1054FE194B550A4F124FE14DED3C5 /* Pods-FloatyPanel_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FloatyPanel_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		B1CD052552C7BBEF750BEDC3072033E8 /* FloatyPanel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FloatyPanel.modulemap; sourceTree = "<group>"; };
 		B5A06472B1EDEFF744094EE703EBB768 /* Pods_FloatyPanel_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FloatyPanel_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBB541AB90637245CD23B7DB19DFA915 /* Pods-FloatyPanel_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FloatyPanel_Example.release.xcconfig"; sourceTree = "<group>"; };
-		BDF8599158E4B78D48B7DB97AB138BB5 /* FloatyPanel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FloatyPanel-dummy.m"; sourceTree = "<group>"; };
+		BCEB014B8CC8F957AD041207FB7C98D8 /* UIView+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Extension.swift"; path = "FloatyPanel/Classes/UIView+Extension.swift"; sourceTree = "<group>"; };
+		C0C90C536BDCD5422D3573950CC117FF /* FloatyPanel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FloatyPanel.debug.xcconfig; sourceTree = "<group>"; };
 		C63726E4B9E94FAD2E39B69DF74DB1EB /* Pods-FloatyPanel_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FloatyPanel_Example-umbrella.h"; sourceTree = "<group>"; };
-		DCE4EBC642FD2B31FEE4EB3DE9C29F4A /* FloatyPanelViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FloatyPanelViewController.swift; path = FloatyPanel/Classes/FloatyPanelViewController.swift; sourceTree = "<group>"; };
+		E703FC576EC9DF32EF136BD657694F60 /* FloatyPanel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FloatyPanel-umbrella.h"; sourceTree = "<group>"; };
+		E93B31AA2456F8CE00A43DEF /* RoundedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RoundedView.swift; path = FloatyPanel/Classes/RoundedView.swift; sourceTree = "<group>"; };
 		F42E596244D5D4DC6AA05299E672B17E /* Pods-FloatyPanel_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FloatyPanel_Example-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -84,6 +86,19 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		06BA2A10DA96B7E40781EF80BD5B3B14 /* FloatyPanel */ = {
+			isa = PBXGroup;
+			children = (
+				90617CAF94FB9E69E5B06C2357B324E1 /* FloatyPanelViewController.swift */,
+				E93B31AA2456F8CE00A43DEF /* RoundedView.swift */,
+				BCEB014B8CC8F957AD041207FB7C98D8 /* UIView+Extension.swift */,
+				4417625A96EC4C962BE09A10DDA461CD /* Pod */,
+				6FE648E74A97DBB48BD7C50C4E8CFBE5 /* Support Files */,
+			);
+			name = FloatyPanel;
+			path = ../..;
+			sourceTree = "<group>";
+		};
 		0815F6D3A7069CA5655C7CEDCF03B22A /* Pods-FloatyPanel_Example */ = {
 			isa = PBXGroup;
 			children = (
@@ -104,29 +119,17 @@
 		09788762B9D2A9A7D519BA50080382A2 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				0AAFD3B198879CE2B2E183C74BC03F36 /* FloatyPanel */,
+				06BA2A10DA96B7E40781EF80BD5B3B14 /* FloatyPanel */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		0AAFD3B198879CE2B2E183C74BC03F36 /* FloatyPanel */ = {
+		4417625A96EC4C962BE09A10DDA461CD /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				3D612B1D5F67BD21C49B5431FA894AD9 /* UIView+Extension.swift */,
-				DCE4EBC642FD2B31FEE4EB3DE9C29F4A /* FloatyPanelViewController.swift */,
-				4A58377FEB17CC4955AC8A00D740C44A /* Pod */,
-				D59419AF187D909E8FC7BB6E30221050 /* Support Files */,
-			);
-			name = FloatyPanel;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		4A58377FEB17CC4955AC8A00D740C44A /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				1887037F7AFDB4B9C645EFE139B4DE3B /* FloatyPanel.podspec */,
-				65C9B6AF7E628956090E56556B3B06B1 /* LICENSE */,
-				48CF466CD88865A3DC65E13BAF8E6ADA /* README.md */,
+				32E74703942A7631802FEE01486D329E /* FloatyPanel.podspec */,
+				0660955568F49720D7669C49B4B0FD3E /* LICENSE */,
+				189A74DA1D8BB8428C46D706359C8104 /* README.md */,
 			);
 			name = Pod;
 			sourceTree = "<group>";
@@ -137,6 +140,21 @@
 				0815F6D3A7069CA5655C7CEDCF03B22A /* Pods-FloatyPanel_Example */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		6FE648E74A97DBB48BD7C50C4E8CFBE5 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A64D73C2641C5EB25159D88492AB7170 /* FloatyPanel.modulemap */,
+				391A99D296852E7A3F1B8124D5984254 /* FloatyPanel-dummy.m */,
+				6186FA5BC27B244E3791109458AEC759 /* FloatyPanel-Info.plist */,
+				608C2E8DF04DC844B9F33F2663233A37 /* FloatyPanel-prefix.pch */,
+				E703FC576EC9DF32EF136BD657694F60 /* FloatyPanel-umbrella.h */,
+				C0C90C536BDCD5422D3573950CC117FF /* FloatyPanel.debug.xcconfig */,
+				99EC586C663279A893DCD0FFA59ACD0F /* FloatyPanel.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/FloatyPanel";
 			sourceTree = "<group>";
 		};
 		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
@@ -164,21 +182,6 @@
 				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		D59419AF187D909E8FC7BB6E30221050 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				B1CD052552C7BBEF750BEDC3072033E8 /* FloatyPanel.modulemap */,
-				BDF8599158E4B78D48B7DB97AB138BB5 /* FloatyPanel-dummy.m */,
-				1E4F5F8B6447EFA0D09091D64231995C /* FloatyPanel-Info.plist */,
-				2BEB70980F6589FA92B9F2E29981DFAD /* FloatyPanel-prefix.pch */,
-				7AD19834E1EA62FF8753DC07AF1B26AD /* FloatyPanel-umbrella.h */,
-				576C0CAD41B5C4F317A9D71DE036BA07 /* FloatyPanel.debug.xcconfig */,
-				372D113842A7F8726F3D2F26C9F10770 /* FloatyPanel.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/FloatyPanel";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,7 +230,7 @@
 			buildConfigurationList = 23A569C82BB01705B50762C1D5E8B595 /* Build configuration list for PBXNativeTarget "FloatyPanel" */;
 			buildPhases = (
 				3B4707C6ABF101366097CDA558B3A046 /* Headers */,
-				577505EBC77AAC41508575600D2BCB83 /* Sources */,
+				9330FBDBE1F156B11032657618D6A961 /* Sources */,
 				A1ADF4E5E8C1097DECD89294524294C3 /* Frameworks */,
 				60364AFDE00F16545C43D9F7EBDF7296 /* Resources */,
 			);
@@ -286,13 +289,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		577505EBC77AAC41508575600D2BCB83 /* Sources */ = {
+		9330FBDBE1F156B11032657618D6A961 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2AB234C62F77AE516CA494F7E021BD2B /* UIView+Extension.swift in Sources */,
-				E144D0E847B68E5A317F6DA54B79791C /* FloatyPanel-dummy.m in Sources */,
-				E95CAF126212393740D7BABA0E46F44B /* FloatyPanelViewController.swift in Sources */,
+				E93B31AB2456F8CE00A43DEF /* RoundedView.swift in Sources */,
+				AD44AFCC11E3B643D4B510C1031DAE98 /* FloatyPanel-dummy.m in Sources */,
+				CEBB60871C15E563D52BBAC63E4C164B /* FloatyPanelViewController.swift in Sources */,
+				49C59190E36B795609321DE028E5420C /* UIView+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,66 +320,7 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		B0087CB4594321EF41619F3181FE120E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 5.0;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
-		};
-		B8BCBD0110C2658BB5DAADB9B7D97B92 /* Debug */ = {
+		196DFA3E4A09A28224918543529A1885 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -426,7 +371,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -439,9 +384,103 @@
 			};
 			name = Debug;
 		};
+		B01D14FDC83DCF9D4BE53066BEA96D05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		B9BF7149BD8EB3683AA107168A682CD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BBB541AB90637245CD23B7DB19DFA915 /* Pods-FloatyPanel_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-FloatyPanel_Example/Pods-FloatyPanel_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FloatyPanel_Example/Pods-FloatyPanel_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		BACF0E9B2E611B3A566EDB4CC8D9695D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 372D113842A7F8726F3D2F26C9F10770 /* FloatyPanel.release.xcconfig */;
+			baseConfigurationReference = 99EC586C663279A893DCD0FFA59ACD0F /* FloatyPanel.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -458,7 +497,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MARKETING_VERSION = 0.0.2;
+				MARKETING_VERSION = 0.0.3;
 				MODULEMAP_FILE = "Target Support Files/FloatyPanel/FloatyPanel.modulemap";
 				PRODUCT_MODULE_NAME = FloatyPanel;
 				PRODUCT_NAME = FloatyPanel;
@@ -475,7 +514,7 @@
 		};
 		C473F1AE7CEF4800BDD0C30C15F6E79B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 576C0CAD41B5C4F317A9D71DE036BA07 /* FloatyPanel.debug.xcconfig */;
+			baseConfigurationReference = C0C90C536BDCD5422D3573950CC117FF /* FloatyPanel.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -492,7 +531,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MARKETING_VERSION = 0.0.2;
+				MARKETING_VERSION = 0.0.3;
 				MODULEMAP_FILE = "Target Support Files/FloatyPanel/FloatyPanel.modulemap";
 				PRODUCT_MODULE_NAME = FloatyPanel;
 				PRODUCT_NAME = FloatyPanel;
@@ -506,11 +545,12 @@
 			};
 			name = Debug;
 		};
-		D7DACBCFAC7C1688F5EAB8048FF2FEE4 /* Debug */ = {
+		F47AF48B32418C08DB483EB2E2FF5BCD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B0F1054FE194B550A4F124FE14DED3C5 /* Pods-FloatyPanel_Example.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -525,7 +565,6 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MARKETING_VERSION = 1.0.1;
 				MODULEMAP_FILE = "Target Support Files/Pods-FloatyPanel_Example/Pods-FloatyPanel_Example.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
@@ -539,41 +578,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
-		};
-		ECF7CB1F554CEC0759BD61D918001297 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BBB541AB90637245CD23B7DB19DFA915 /* Pods-FloatyPanel_Example.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-FloatyPanel_Example/Pods-FloatyPanel_Example-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MARKETING_VERSION = 1.0.1;
-				MODULEMAP_FILE = "Target Support Files/Pods-FloatyPanel_Example/Pods-FloatyPanel_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
@@ -590,8 +594,8 @@
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B8BCBD0110C2658BB5DAADB9B7D97B92 /* Debug */,
-				B0087CB4594321EF41619F3181FE120E /* Release */,
+				196DFA3E4A09A28224918543529A1885 /* Debug */,
+				B01D14FDC83DCF9D4BE53066BEA96D05 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -599,8 +603,8 @@
 		613D43DE2B77B96E4A30AB2C4C150773 /* Build configuration list for PBXNativeTarget "Pods-FloatyPanel_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D7DACBCFAC7C1688F5EAB8048FF2FEE4 /* Debug */,
-				ECF7CB1F554CEC0759BD61D918001297 /* Release */,
+				F47AF48B32418C08DB483EB2E2FF5BCD /* Debug */,
+				B9BF7149BD8EB3683AA107168A682CD9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
