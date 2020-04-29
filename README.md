@@ -39,7 +39,7 @@ class CustomFloatyPanelViewController: FloatyPanelViewController { }
 
 ![Step1](https://github.com/Shayimpagne/FloatyPanel/blob/master/assets/step1.png)
 
-### Add constraints to your panelView, but don't add .height constraint, this will not give an opportunity to "stretch" your panel while is dragging up. Then connect your panelView .bottom constraint to panelViewBottomConstraint outlet.
+### Add constraints to your panelView, but don't add .height constraint, this will not give an opportunity to "stretch" your panel while it's dragged up. Then connect your panelView .bottom constraint to panelViewBottomConstraint outlet.
 
 ![Step2](https://github.com/Shayimpagne/FloatyPanel/blob/master/assets/step2.png)
 
@@ -63,7 +63,7 @@ present(viewController, animated: false, completion: nil) // Important point, Fl
 
 ## Delegate functions
 
-### Additional features are available when implementing the FloatyPanelDelegate protocol.
+### Additional features are available by implementing the FloatyPanelDelegate protocol.
 
 ```swift
 floatyPanelDidClose(_ floatingPanel: FloatyPanelViewController) // called when controller is closed.

@@ -11,6 +11,7 @@ import UIKit
 @objc
 public enum FloatyPanelState: Int {
     case full = 0
+    case partial
     case hidden
 }
 
@@ -55,16 +56,17 @@ open class FloatyPanelViewController: UIViewController {
     
     public var state: FloatyPanelState = .full
     public var panelViewHeight: CGFloat = 0
+    public var partialHeight: CGFloat?
+    public var isAnimatedGrabber: Bool = false
     
     private var panelViewStartBottomPosition: CGFloat = 0
     private var contentViewBottomPadding: CGFloat = 0
     
     private var backgroundView: UIView!
     private var grabberViewContainer: UIView!
+    private var grabberView: RoundedView!
     
-    /*
-     MARK: - Init and setup
-     */
+    //MARK: - Init and Setup
     override open func viewDidLoad() {
         super.viewDidLoad()
         
@@ -90,9 +92,7 @@ open class FloatyPanelViewController: UIViewController {
         panelView.roundCorners([.topLeft, .topRight], radius: Radius)
     }
     
-    /*
-     MARK: Hide logic
-     */
+    //MARK: Hide logic
     open func hidePanel(with completion: (() -> ())?) {
         panelViewBottomConstraint.constant = -(panelViewHeight)
         
@@ -108,9 +108,7 @@ open class FloatyPanelViewController: UIViewController {
         }
     }
     
-    /*
-     MARK: Present logic
-     */
+    //MARK: Present logic
     private func present() {
         panelViewBottomConstraint.constant = 0
         
@@ -120,9 +118,7 @@ open class FloatyPanelViewController: UIViewController {
         }, completion: nil)
     }
     
-    /*
-     MARK: UI functions
-     */
+    //MARK: UI functions
     private func setupBackgroundView() {
         backgroundView = UIView()
         backgroundView.backgroundColor = UIColor.black
@@ -151,7 +147,7 @@ open class FloatyPanelViewController: UIViewController {
         grabberViewContainer.trailingAnchor.constraint(equalTo: panelView.trailingAnchor, constant: 0).isActive = true
         grabberViewContainer.heightAnchor.constraint(equalToConstant: GrabberViewContainerHeight).isActive = true
         
-        let grabberView = UIView()
+        grabberView = RoundedView()
         grabberView.backgroundColor = UIColor.lightGray
         grabberView.clipsToBounds = true
         grabberViewContainer.addSubview(grabberView)
@@ -166,9 +162,7 @@ open class FloatyPanelViewController: UIViewController {
         grabberViewContainer.addGestureRecognizer(dragGesture)
     }
     
-    /*
-     MARK: Gesture recognizers functions
-     */
+    //MARK: Gesture recognizer functions
     @objc
     private func hide() {
         hidePanel(with: nil)
@@ -181,12 +175,18 @@ open class FloatyPanelViewController: UIViewController {
             panelViewStartBottomPosition = panelViewBottomConstraint.constant
             contentViewBottomPadding = panelViewContentBottomConstraint?.constant ?? 0
             delegate?.floatyPanelWillBeginDragging?(self)
+            
+            if isAnimatedGrabber == true {
+                UIView.animate(withDuration: 0.3, delay: 0, options: [.curveEaseOut, .beginFromCurrentState], animations: {
+                    self.grabberView.transform = CGAffineTransform(scaleX: 0.7, y: 0.7)
+                }, completion: nil)
+            }
         case .changed:
             let translation = gesture.translation(in: panelView)
             let yPosition = panelViewStartBottomPosition - translation.y
             
             switch yPosition {
-            case let x where x > 0:
+            case let y where y > 0:
                 let position = yPosition * Delta
                 panelViewContentBottomConstraint?.constant = contentViewBottomPadding + position
             default:
@@ -196,11 +196,22 @@ open class FloatyPanelViewController: UIViewController {
             let translation = gesture.translation(in: panelView)
             let yPosition = panelViewStartBottomPosition - translation.y
             
-            switch yPosition {
-            case let x where x < -(panelViewHeight / CGFloat(PanelViewPart)):
+            let hiddenPartHeight = panelViewHeight / CGFloat(PanelViewPart)
+            let minFullState = panelViewHeight - hiddenPartHeight
+            
+            if yPosition < -minFullState {
                 hidePanel(with: nil)
                 state = .hidden
-            default:
+            } else if let partialHeight = partialHeight, partialHeight > hiddenPartHeight, yPosition < -(panelViewHeight - partialHeight) {
+                panelViewBottomConstraint.constant = -(panelViewHeight - partialHeight)
+                panelViewContentBottomConstraint?.constant = contentViewBottomPadding
+                
+                UIView.animate(withDuration: 0.3, delay: 0, options: [.curveEaseOut], animations: {
+                    self.view.layoutSubviews()
+                }, completion: nil)
+                
+                state = .partial
+            } else {
                 panelViewBottomConstraint.constant = 0
                 panelViewContentBottomConstraint?.constant = contentViewBottomPadding
                 
@@ -209,6 +220,12 @@ open class FloatyPanelViewController: UIViewController {
                 }, completion: nil)
                 
                 state = .full
+            }
+            
+            if isAnimatedGrabber == true {
+                UIView.animate(withDuration: 0.3, delay: 0, options: [.curveEaseOut, .beginFromCurrentState], animations: {
+                    self.grabberView.transform = CGAffineTransform.identity
+                }, completion: nil)
             }
             
             delegate?.floatyPanelDidEndDragging?(self, targetPosition: state)
